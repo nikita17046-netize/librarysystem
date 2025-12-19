@@ -1,4 +1,4 @@
-/* Reset */
+Reset
 * {
     margin: 0;
     padding: 0;
@@ -141,22 +141,254 @@ footer h3  {
     color: #facc15;
 }
 
-/* footer p {
-    text-align: left;
-    font-size: 14px;
-} */
 
-/* footer nav ul {
+
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+    background: linear-gradient(90deg, #0f766e, #0e9cee);
+    color: #fff;
+    padding: 8px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0369a1;
+}
+
+
+navbar ul {
+    list-style: none;
     display: flex;
     gap: 25px;
-} */
+}
+navbar {
+    background-color: #fff;
+}
+navbar ul li {
+    cursor: pointer;
+    font-weight: 600;
+    color: #0369a1;
+}
 
-/* footer div:last-child {
-    text-align: center;
+navbar ul li:hover {
+    color: #1b8fd2;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: #eafcff;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    color: #0f172a;
+}
+
+.hero-text p {
     margin-top: 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+.hero-image {
+    width: 40%;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+}
+
+.books-section {
+    position: relative;
+    background: #eafcff;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.books-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.books-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Book Card */
+.book-card {
+    background: #fdf8f1;
+    width: 240px;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.book-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.book-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.price {
+    margin-bottom: 15px;
+}
+
+.price .old {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 8px;
+}
+
+.price .new {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Button */
+.cart-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff6b4a;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cart-btn:hover {
+    background: #e5533a;
+}
+
+/* Arrow buttons */
+.arrow {
+    background: #22c55e;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.stats h2 {
+    color: #0369a1;
+    font-size: 36px;
+}
+
+.stats p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(180deg, #0f172a, #020617);
+    color: #cbd5e1;
+    padding: 50px 60px 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+footer h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: 10px 0;
     font-size: 14px;
-    color: #cbd5f5;
-} */
-.footer ul li hoven{
-    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    color: #38bdf8;
+    transform: translateX(4px);
+    transition: 0.3s;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1e293b;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
 }
